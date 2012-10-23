@@ -1,4 +1,48 @@
 EngCel
 ======
 
-Engineering extensions for excel
+Engineering extensions for Microsoft Excel
+
+EngCel is an add-in that will ultimately provide extened functionality to make Excel more suitable for Engineering Calculations.
+
+Currently Excel 2003 - 2010 is supported, however it is likely to be compatable with older/newer versions.
+
+Installation
+------------
+
+EngCel is a VBA add-in, which means it can be installed from Excel. This can be done for a single session just by opening the file, or permenantly by loading the EngCel.xla file.
+
+The method for loading add-ins varies between versions of Excel:
+<ul>
+<li><a href="http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP010096834.aspx#BMexceladdin">Loading an add-in for Excel 2007 and 2010</a></li>
+<li><a href="http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP005203732.aspx">Loading an add-in for Excel 2003</a></li>
+</ul>
+
+Usage
+=====
+
+When loaded EngCel provides the following extensions:
+
+In-line Engineering Notation
+----------------------------
+
+The Pipe Parser extension loads automatically with the EngCel. This provides a simple mark-up language, based on LaTeX, which allows super/sub script notation and Greek symbols to be typed directly into the formula bar.
+
+To use the parser start a cell with a pipe "|" this indicates that the text in the cell should be processed using the following rules:
+
+* ^ - The next charactor should be in super-script
+* _ - The next charactor should be in sub-script
+* ¬ - The preceeding charactor should have a bar over it
+* {} - Mark-up between brackets should be considered as a single charactor
+* \Alpha - Insert the Greek symbol stated, where proper case denotes a capatal, and lower case a little letter.
+* \ - The next charactor should be escaped if it is a special charactor
+
+For example:
+
+```
+|x¬\alpha_{\Omega}^2b
+```
+
+Would become x̄α<sub>Ω</sub>&sup2;b
+
+Although why you'd want to write that, I'm really not sure.
