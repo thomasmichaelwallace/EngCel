@@ -46,3 +46,9 @@ For example:
 Would become x̄α<sub>Ω</sub>&sup2;b
 
 Although why you'd want to write that, I'm really not sure.
+
+
+Author and Licence
+==================
+
+Challenger is primiarly written by Thomas Michael Wallace (www.thomasmichaelwallace.co.uk), and released under the GPL v3 licence.
