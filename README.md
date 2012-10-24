@@ -36,6 +36,7 @@ To use the parser start a cell with a pipe "|" this indicates that the text in t
 * {} - Mark-up between brackets should be considered as a single charactor
 * \Alpha - Insert the Greek symbol stated, where proper case denotes a capatal, and lower case a little letter.
 * \ - The next charactor should be escaped if it is a special charactor
+* @ - Inserts 'mixin' codes, see below
 
 For example:
 
@@ -46,6 +47,11 @@ For example:
 Would become x̄α<sub>Ω</sub>&sup2;b
 
 Although why you'd want to write that, I'm really not sure.
+
+Mixin codes are available, by piping the name of the mixin the cell will be replaced with a templated cell. At the moment mixins can only be harcoded into EngCel, however alternatives are being investigated. The following mixins are known:
+
+* @pass - A 'Pass' or 'Fail', green/red conditionally formated cell referencing the utilisation percentage two left from the cell
+* @ok - A 'OK' or 'Check', green/red conditionally formated cell referencing the utilisation percentage two left from the cell
 
 
 Author and Licence
