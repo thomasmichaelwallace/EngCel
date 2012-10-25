@@ -34,7 +34,7 @@ To use the parser start a cell with a pipe "|" this indicates that the text in t
 * _ - The next charactor should be in sub-script
 * ¬ - The preceeding charactor should have a bar over it
 * {} - Mark-up between brackets should be considered as a single charactor
-* \Alpha - Insert the Greek symbol stated, where proper case denotes a capatal, and lower case a little letter.
+* \Alpha - Insert the Greek symbol stated, where proper case denotes a capatal, and lower case a little letter. There are also a number of mathematical symbols available, however I haven't had the chance to define these just yet- just give it a go!
 * \ - The next charactor should be escaped if it is a special charactor
 * @ - Inserts 'mixin' codes, see below
 
