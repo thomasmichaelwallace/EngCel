@@ -7,6 +7,8 @@ EngCel is an add-in that will ultimately provide extened functionality to make E
 
 Currently Excel 2003 - 2010 is supported, however it is likely to be compatable with older/newer versions.
 
+For an illustrated guide check out: http://www.beingbrunel.com/inline-subsuper-script-in-excel-and-more/
+
 Installation
 ------------
 
