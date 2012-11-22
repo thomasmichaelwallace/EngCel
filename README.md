@@ -59,4 +59,4 @@ Mixin codes are available, by piping the name of the mixin the cell will be repl
 Author and Licence
 ==================
 
-Challenger is primiarly written by Thomas Michael Wallace (www.thomasmichaelwallace.co.uk), and released under the GPL v3 licence.
+EngCel is primiarly written by Thomas Michael Wallace (www.thomasmichaelwallace.co.uk), and released under the GPL v3 licence.
