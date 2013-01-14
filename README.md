@@ -54,7 +54,7 @@ Mixin codes are available, by piping the name of the mixin the cell will be repl
 
 * @pass - A 'Pass' or 'Fail', green/red conditionally formated cell referencing the utilisation percentage two left from the cell
 * @ok - A 'OK' or 'Check', green/red conditionally formated cell referencing the utilisation percentage two left from the cell
-
+* @eng - Formats cell in the 'power-of-three' exponent that engineers typically report in.
 
 Author and Licence
 ==================
