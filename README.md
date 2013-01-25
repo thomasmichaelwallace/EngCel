@@ -7,8 +7,6 @@ EngCel is an add-in that will ultimately provide extened functionality to make E
 
 Currently Excel 2003 - 2010 is supported, however it is likely to be compatable with older/newer versions.
 
-For an illustrated guide check out: http://www.beingbrunel.com/inline-subsuper-script-in-excel-and-more/
-
 Installation
 ------------
 
@@ -54,9 +52,24 @@ Mixin codes are available, by piping the name of the mixin the cell will be repl
 
 * @pass - A 'Pass' or 'Fail', green/red conditionally formated cell referencing the utilisation percentage two left from the cell
 * @ok - A 'OK' or 'Check', green/red conditionally formated cell referencing the utilisation percentage two left from the cell
-* @eng - Formats cell in the 'power-of-three' exponent that engineers typically report in.
+
+
+Function Colouring
+------------------
+
+To enabled EngCel will enable mod_colour. This modification to Excel will colour functions depending on their relationships:
+
+* Formulas that are neither used by, or use other cells will turn gray (unused value)
+* Formulas that are used, but not used by, other cells will turn red (input value)
+* Formulas that only reference a single cell, without calculation, will turn orange (refered value)
+* Formulas that rely and are relied upon by other cells will turn blue (function)
+* Formulas that use other cells but are not used themselves will turn green (result value)
+
+Because of limitations in Excel, mod_colour disables the undo function, and therefore is now switched on when Excel starts.
+
+To enable mod_colour, use the mixin _|@colour_. This will return either 'on' or 'off' representing the state of mod_colour after the switch. Note that mod_colour will only effect cells altered _when it is on_.
 
 Author and Licence
 ==================
 
-EngCel is primiarly written by Thomas Michael Wallace (www.thomasmichaelwallace.co.uk), and released under the GPL v3 licence.
+Challenger is primiarly written by Thomas Michael Wallace (www.thomasmichaelwallace.co.uk), and released under the GPL v3 licence.
