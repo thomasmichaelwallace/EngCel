@@ -7,16 +7,20 @@ EngCel is an add-in that will ultimately provide extened functionality to make E
 
 Currently Excel 2003 - 2010 is supported, however it is likely to be compatable with older/newer versions.
 
+A semi-comprehensive illustrated introdction can be found at:
+* [In-line super/sub script in Excel and More - Being Brunel](http://www.beingbrunel.com/inline-subsuper-script-in-excel-and-more/ "Being Brunel")
+
+
 Installation
 ------------
 
 EngCel is a VBA add-in, which means it can be installed from Excel. This can be done for a single session just by opening the file, or permenantly by loading the EngCel.xla file.
 
 The method for loading add-ins varies between versions of Excel:
-<ul>
-<li><a href="http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP010096834.aspx#BMexceladdin">Loading an add-in for Excel 2007 and 2010</a></li>
-<li><a href="http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP005203732.aspx">Loading an add-in for Excel 2003</a></li>
-</ul>
+
+* [Loading an add-in for Excel 2007 and 2010](http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP010096834.aspx#BMexceladdin "Excel 2007 to 2010")
+* [Loading an add-in for Excel 2003](http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP005203732.aspx "Excel 2003")
+
 
 Usage
 =====
@@ -41,17 +45,20 @@ To use the parser start a cell with a pipe "|" this indicates that the text in t
 For example:
 
 ```
-|x¬\alpha_{\Omega}^2b
+|kN/mm^2
 ```
 
-Would become x̄α<sub>Ω</sub>&sup2;b
+Would become kN/mm²
 
-Although why you'd want to write that, I'm really not sure.
+Although why you'd want to write that, I'm really not sure!
 
 Mixin codes are available, by piping the name of the mixin the cell will be replaced with a templated cell. At the moment mixins can only be harcoded into EngCel, however alternatives are being investigated. The following mixins are known:
 
-* @pass - A 'Pass' or 'Fail', green/red conditionally formated cell referencing the utilisation percentage two left from the cell
-* @ok - A 'OK' or 'Check', green/red conditionally formated cell referencing the utilisation percentage two left from the cell
+* @pass - A 'Pass' or 'Fail', green/red conditionally formated cell referencing the utilisation percentage two left from the cell. To reverse the sense use @!pass.
+* @ok - A 'OK' or 'Check', green/red conditionally formated cell referencing the utilisation percentage two left from the cell. To reverse the sense use @!ok.
+* @eng - Format cell to shown engineering exponent notation (i.e. x10^3, ^6, ^-3), etc.
+* @colour - Switch on and off function colouring, see below for more information.
+* @help - Create a new sheet with this help file and an charactor map
 
 
 Function Colouring
@@ -67,7 +74,8 @@ To enabled EngCel will enable mod_colour. This modification to Excel will colour
 
 Because of limitations in Excel, mod_colour disables the undo function, and therefore is now switched on when Excel starts.
 
-To enable mod_colour, use the mixin _|@colour_. This will return either 'on' or 'off' representing the state of mod_colour after the switch. Note that mod_colour will only effect cells altered _when it is on_.
+To enable mod_colour, use the mixin |@colour. This will return either 'on' or 'off' representing the state of mod_colour after the switch. Note that mod_colour will only effect cells altered when it is on.
+
 
 Author and Licence
 ==================
