@@ -72,7 +72,7 @@ To enabled EngCel will enable mod_colour. This modification to Excel will colour
 * Formulas that rely and are relied upon by other cells will turn blue (function)
 * Formulas that use other cells but are not used themselves will turn green (result value)
 
-Because of limitations in Excel, mod_colour disables the undo function, and therefore is now switched on when Excel starts.
+Because of limitations in Excel, mod_colour disables the undo function, and therefore is switched off by default.
 
 To enable mod_colour, use the mixin |@colour. This will return either 'on' or 'off' representing the state of mod_colour after the switch. Note that mod_colour will only effect cells altered when it is on.
 
