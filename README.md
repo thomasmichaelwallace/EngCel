@@ -60,11 +60,27 @@ Mixin codes are available, by piping the name of the mixin the cell will be repl
 * @colour - Switch on and off function colouring, see below for more information.
 * @help - Create a new sheet with this help file and an character map
 
+Variable Naming
+---------------
+
+The variable namer is an extension to the pipe parser. When invoked it will name the cell to the left of the symbol with the text in the cell to the right of the symbol. Considering that the standard calculation sheet writes [variable name] | [variable symbol] | [variable value] | [units], the aim is to make it easier to name and refer to the variables used.
+
+To invoke the variable namer simply end any pipe notation with '=>'.
+
+For example having the following table:
+
+```
+| HAL | |\omega=> | 9000
+```
+
+Would result in the cell with '9000' being named 'HAL'. Further formulas can then be more sensical as '=IF(B3=9000,"Can't do that","Can do that")' becomes '=IF(HAL=9000,"Can't do that","Can do that")'.
+
+Note that Excel has some conventions with naming, so stick to unique, charactor only variable names if you want an easy life.
 
 Function Colouring
 ------------------
 
-To enabled EngCel will enable mod_colour. This modification to Excel will colour functions depending on their relationships:
+This modification to Excel will colour functions depending on their relationships:
 
 * Formulas that are neither used by, or use other cells will turn gray (unused value)
 * Formulas that are used, but not used by, other cells will turn red (input value)
