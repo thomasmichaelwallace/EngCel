@@ -40,7 +40,6 @@ To use the parser start a cell with a pipe "|" this indicates that the text in t
 * {} - Mark-up between brackets should be considered as a single character
 * \Alpha - Insert the Greek symbol stated, where proper case denotes a capital, and lower case a little letter. There are also a number of mathematical symbols available, however I haven't had the chance to define these just yet- just give it a go!
 * \ - The next character should be escaped if it is a special character
-* @ - Inserts 'mixin' codes, see below
 
 For example:
 
@@ -52,13 +51,16 @@ Would become kN/mm²
 
 Although why you'd want to write that, I'm really not sure!
 
-Mixin codes are available, by piping the name of the mixin the cell will be replaced with a templates cell. At the moment mixins can only be harcoded into EngCel, however alternatives are being investigated. The following mixins are known:
+Mixins
+------
 
-* @pass - A 'Pass' or 'Fail', green/red conditionally formatted cell referencing the utilisation percentage two left from the cell. To reverse the sense use @!pass.
-* @ok - A 'OK' or 'Check', green/red conditionally formatted cell referencing the utilisation percentage two left from the cell. To reverse the sense use @!ok.
-* @eng - Format cell to shown engineering exponent notation (i.e. x10^3, ^6, ^-3), etc.
-* @colour - Switch on and off function colouring, see below for more information.
-* @help - Create a new sheet with this help file and an character map
+Mixin codes are essentially templates; by piping the name of the mixin the cell will be replaced with a templates cell. At the moment mixins can only be hardcoded into EngCel, however alternatives are being investigated. The following mixins are known:
+
+* |@pass - A 'Pass' or 'Fail', green/red conditionally formatted cell referencing the utilisation percentage two left from the cell. To reverse the sense use @!pass.
+* |@ok - A 'OK' or 'Check', green/red conditionally formatted cell referencing the utilisation percentage two left from the cell. To reverse the sense use @!ok.
+* |@eng - Format cell to shown engineering exponent notation (i.e. x10^3, ^6, ^-3), etc.
+* |@colour - Switch on and off function colouring, see below for more information.
+* |@help - Create a new sheet with this help file and an character map
 
 Variable Naming
 ---------------
@@ -82,7 +84,7 @@ Function Colouring
 
 This modification to Excel will colour functions depending on their relationships:
 
-* Formulas that are neither used by, or use other cells will turn gray (unused value)
+* Formulas that are neither used by, or use other cells will turn grey (unused value)
 * Formulas that are used, but not used by, other cells will turn red (input value)
 * Formulas that only reference a single cell, without calculation, will turn orange (refereed value)
 * Formulas that rely and are relied upon by other cells will turn blue (function)
