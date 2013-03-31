@@ -9,6 +9,7 @@ Currently Excel 2003 - 2010 is supported, however it is likely to be compatible 
 
 A semi-comprehensive illustrated introduction can be found at:
 * [In-line super/sub script in Excel and More - Being Brunel](http://www.beingbrunel.com/inline-subsuper-script-in-excel-and-more/ "Being Brunel")
+* [EngCel: Colours, Names and More - Being Brunel](http://www.beingbrunel.com/engcel-colours-names-and-more/ "Being Brunel")
 
 
 Installation
