@@ -78,7 +78,7 @@ For example having the following table:
 
 Would result in the cell with '9000' being named 'HAL'. Further formulas can then be more sensical as '=IF(B3=9000,"Can't do that","Can do that")' becomes '=IF(HAL=9000,"Can't do that","Can do that")'.
 
-Note that Excel has some conventions with naming, so stick to unique, charactor only variable names if you want an easy life.
+Note that Excel has some conventions with naming, so stick to unique, character only variable names if you want an easy life.
 
 Function Colouring
 ------------------
