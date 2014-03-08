@@ -19,7 +19,7 @@ EngCel is a VBA add-in, which means it can be installed from Excel. This can be 
 
 The method for loading add-ins varies between versions of Excel:
 
-* [Loading an add-in for Excel 2007 and 2010](http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP010096834.aspx#BMexceladdin "Excel 2007 to 2010")
+* [Loading an add-in for Excel 2007 to 2013](http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP010096834.aspx#BMexceladdin "Excel 2007 to 2010")
 * [Loading an add-in for Excel 2003](http://office.microsoft.com/en-us/excel-help/load-or-unload-add-in-programs-HP005203732.aspx "Excel 2003")
 
 
