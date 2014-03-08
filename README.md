@@ -5,7 +5,7 @@ Engineering extensions for Microsoft Excel
 
 EngCel is an add-in that will ultimately provide extended functionality to make Excel more suitable for Engineering Calculations.
 
-Currently Excel 2003 - 2010 is supported, however it is likely to be compatible with older/newer versions.
+Currently Excel 2003 - 2013 is supported, however it is likely to be compatible with older/newer versions.
 
 A semi-comprehensive illustrated introduction can be found at:
 * [In-line super/sub script in Excel and More - Being Brunel](http://www.beingbrunel.com/inline-subsuper-script-in-excel-and-more/ "Being Brunel")
